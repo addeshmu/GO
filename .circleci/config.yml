@@ -3,7 +3,7 @@ machine:
     IMPORT_PATH: "github.com/mycode/GO"
     GOROOT: "/usr/local/go"
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
-    GOPATH: "/home/amitd92/gocode/src/mycode/github.com/mycode/GO"
+    GOPATH: "/home/amitd92/gocode/src/mycode"
     TEST_RESULTS: "/home/amitd92/gocode/src/mycode/github.com/mycode/GO/testResults"
 
 dependencies:
