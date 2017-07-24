@@ -1,6 +1,6 @@
 package one
 
-//one does what one wants
+//one does what one wantss
 func one(b int, a int) bool {
 	if b != 2 {
 		if b+a > 10 {
