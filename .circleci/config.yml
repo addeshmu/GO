@@ -1,9 +1,9 @@
 machine:
   environment:
     IMPORT_PATH: "github.com/mycode/GO"
-    GOROOT: $GOROOT
+    GOROOT: "/usr/local/go"
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
-    GOPATH: $GOPATH
+    GOPATH: "/home/amitd92/gocode/src/mycode/github.com/mycode/GO"
 
 dependencies:
   pre:
@@ -18,7 +18,7 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.8
-    working_directory: /go/src/github.com/mycode/GO
+    working_directory: $GOPATH
     steps:
       - go test
 test:
