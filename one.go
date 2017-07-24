@@ -10,3 +10,10 @@ func one(b int, a int) bool {
 	}
 	return true
 }
+
+func two(b int) bool {
+	if b > 1 {
+		return true
+	}
+	return false
+}
