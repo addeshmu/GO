@@ -24,6 +24,7 @@ jobs:
 test:
   pre:
     - go vet ./...
+    - go test
 
   override:
     - godep go test ./...
