@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-//TestOneFalse is test for one.go
+//TestOneFalse is test for one.gos
 func TestOneFalse(t *testing.T) {
 	if one(3, 4) != false {
 		t.Error("Wrong bool value is coming from one.go")
