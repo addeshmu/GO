@@ -19,7 +19,7 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.8
-    working_directory: /home/amitd92/gocode/src/mycode/
+    working_directory: test
     steps:
       - checkout
       - run: mkdir -p {$TEST_RESULTS}
