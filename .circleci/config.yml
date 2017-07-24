@@ -1,6 +1,6 @@
 machine:
   environment:
-    IMPORT_PATH: "github.com/mycode/"
+    IMPORT_PATH: "github.com/mycode/GO"
     GOROOT: $GOROOT
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
     GOPATH: $GOPATH
@@ -18,7 +18,8 @@ jobs:
   build:
     docker:
       - image: buildpack-deps:trusty
-   
+    
+   working_directory: /go/src/github.com/nycode/GO
 
 test:
   pre:
