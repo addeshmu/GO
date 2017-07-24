@@ -1,6 +1,9 @@
 machine:
   environment:
     IMPORT_PATH: "github.com/mycode/"
+    GOROOT: $GOROOT
+    PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
+    GOPATH: $GOPATH
 
 dependencies:
   pre:
