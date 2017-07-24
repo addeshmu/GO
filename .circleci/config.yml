@@ -18,8 +18,7 @@ jobs:
   build:
     docker:
       - image: buildpack-deps:trusty
-    steps:
-      - run: go test
+   
 
 test:
   pre:
