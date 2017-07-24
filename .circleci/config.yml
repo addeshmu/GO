@@ -19,8 +19,9 @@ jobs:
     docker:
       - image: buildpack-deps:trusty
     
-   working_directory: /go/src/github.com/nycode/GO
-
+    working_directory: /go/src/github.com/mycode/GO
+    steps:
+      - go test
 test:
   pre:
     - go vet ./...
