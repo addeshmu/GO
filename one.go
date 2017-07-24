@@ -13,7 +13,7 @@ func one(b int, a int) bool {
 
 func two(b int) bool {
 	if b > 1 {
-		return false
+		return true
 	}
 	return false
 }
