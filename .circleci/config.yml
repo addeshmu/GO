@@ -20,7 +20,7 @@ jobs:
       - image: circleci/golang:1.8
     working_directory: $GOPATH
     steps:
-      - go test
+      - test
 test:
   pre:
     - go vet ./...
