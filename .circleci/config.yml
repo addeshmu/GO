@@ -14,6 +14,10 @@ dependencies:
     - rsync -azC --delete ./ "$GOPATH/src/$IMPORT_PATH/"
     - go get -t -d -v ./...
     - go build -v
+jobs:
+  build:
+    steps:
+      - run: make test
 
 test:
   pre:
