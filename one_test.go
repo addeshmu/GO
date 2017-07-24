@@ -23,3 +23,8 @@ func TestOneTrue(t *testing.T) {
 func TestOneb2(t *testing.T) {
 	assert.Equal(t, one(2, 2), true, "this should be true")
 }
+
+func TestTwo1(t *testing.T) {
+	assert.Equal(t, two(1), false, "false")
+	assert.Equal(t, two(10), true, "true")
+}
