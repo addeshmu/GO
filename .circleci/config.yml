@@ -3,7 +3,8 @@ machine:
     IMPORT_PATH: "github.com/mycode/GO"
     GOROOT: "/usr/local/go"
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
-    GOPATH: "/home/amitd92/gocode/src/mycode/github.com/mycode/GO"
+    GOPATH: "/home/amitd92/gocode"
+    TEST_RESULTS: "/home/amitd92/gocode/src/mycode/github.com/mycode/GO/testResults"
 
 dependencies:
   pre:
@@ -18,9 +19,11 @@ jobs:
   build:
     docker:
       - image: circleci/golang:1.8
-    working_directory: $GOPATH/circleci-work
     steps:
       - checkout
+      - run: mkdir -p {$TEST_RESULTS}
+      - run: go get github.com/jstemmer/go-junit-report
+      - run: go test
 test:
   pre:
     - go vet ./...
@@ -28,3 +31,4 @@ test:
 
   override:
     - godep go test ./...
+    - go test
