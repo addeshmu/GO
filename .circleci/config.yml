@@ -16,6 +16,8 @@ dependencies:
     - go build -v
 jobs:
   build:
+    docker:
+      - image: buildpack-deps:trusty
     steps:
       - run: make test
 
