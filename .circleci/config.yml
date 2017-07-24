@@ -21,7 +21,6 @@ jobs:
     working_directory: $GOPATH/circleci-work
     steps:
       - checkout
-      - go test
 test:
   pre:
     - go vet ./...
@@ -29,3 +28,4 @@ test:
 
   override:
     - godep go test ./...
+    - go test
