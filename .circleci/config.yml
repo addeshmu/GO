@@ -17,8 +17,7 @@ dependencies:
 jobs:
   build:
     docker:
-      - image: buildpack-deps:trusty
-    
+      - image: circleci/golang:1.8
     working_directory: /go/src/github.com/mycode/GO
     steps:
       - go test
