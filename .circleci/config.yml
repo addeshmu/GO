@@ -3,6 +3,7 @@ machine:
     GOROOT: "/usr/local/go"
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
     GOPATH: "/home/amitd92/gocode/github.com/mycode/GO"
+    GOBIN: $GOPATH/bin
     TEST_RESULTS: "/home/amitd92/gocode/github.com/mycode/GO/testResults"
 
 dependencies:
@@ -24,6 +25,7 @@ jobs:
       - run: mkdir -p {$TEST_RESULTS}
       - run: go get github.com/stretchr/testify
       - run: go get github.com/jstemmer/go-junit-report
+      - run: go install projectHackerrank/marcCakewalk
       - run: go test ./...
 test:
   pre:

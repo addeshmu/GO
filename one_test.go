@@ -20,6 +20,7 @@ func TestOneTrue(t *testing.T) {
 	}
 }
 
+//test circle
 //TestOneb2 tests func two flow 1
 func TestOneb2(t *testing.T) {
 	assert.Equal(t, one(2, 2), true, "this should be true")
