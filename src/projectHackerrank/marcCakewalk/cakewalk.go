@@ -1,5 +1,5 @@
-// https://www.hackerrank.com/challenges/marcs-cakewalk
-package main
+// Package cakewalk : https://www.hackerrank.com/challenges/marcs-cakewalk
+package cakewalk
 
 import (
 	"bufio"
@@ -9,7 +9,8 @@ import (
 	"sort"
 )
 
-func main() {
+// Cakewalk soln
+func Cakewalk() {
 	var n int
 	io := bufio.NewReader(os.Stdin)
 	fmt.Fscan(io, &n)
