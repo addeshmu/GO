@@ -25,7 +25,7 @@ jobs:
       - run: mkdir -p {$TEST_RESULTS}
       - run: go get github.com/stretchr/testify
       - run: go get github.com/jstemmer/go-junit-report
-      - run: go install
+      - run: go install src/projectHackerrank/marcCakewalk
       - run: go test ./...
 test:
   pre:
