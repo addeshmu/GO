@@ -2,7 +2,7 @@ machine:
   environment:
     GOROOT: "/usr/local/go"
     PATH: "/usr/local/go/bin:/usr/local/go/bin:~/.go/bin:${PATH}"
-    GOPATH: "/home/amitd92/gocode"
+    GOPATH: "/home/amitd92/gocode/github.com/mycode/GO"
     TEST_RESULTS: "/home/amitd92/gocode/github.com/mycode/GO/testResults"
 
 dependencies:
